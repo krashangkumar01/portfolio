@@ -1,0 +1,36 @@
+.timeline-item {
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+  margin-bottom: 20px;
+  height: 90%; /* Allow the item to take the full height */
+}
+
+.timeline-dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid rgba(127, 101, 231, 0.8);
+  background-color: transparent;
+  border-radius: 50%;
+  margin-left: 130px;
+  margin-right: -7px;
+  box-shadow: 0 0 19px rgba(127, 101, 231, 0.8); /* Add glowing effect */
+}
+
+.timeline-dot.filled {
+  background-color: rgba(127, 101, 231, 0.8);
+  border: none;
+}
+
+.timeline-content {
+  width: 2px;
+  height: 100%;
+  background-color: rgba(127, 101, 231, 0.8);
+  margin-top: 20px;
+  box-shadow: 0 0 19px rgba(127, 101, 231, 0.8); /* Add glowing effect */
+}
+
+@media (max-width: 768px) {
+  .timeline-item {
+    display: none;
+  }
+}
