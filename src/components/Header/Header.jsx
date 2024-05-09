@@ -43,9 +43,9 @@ function Header() {
               <Nav.Item className={`navbar-item ${activeLink === 'projects' ? 'navbar-item-active' : ''}`}>
                 <Nav.Link href="#projects" onClick={() => handleNavLinkClick('projects')}>Projects</Nav.Link>
               </Nav.Item>
-              <Nav.Item className={`navbar-item ${activeLink === 'certifications' ? 'navbar-item-active' : ''}`}>
+              {/* <Nav.Item className={`navbar-item ${activeLink === 'certifications' ? 'navbar-item-active' : ''}`}>
                 <Nav.Link href="#certifications" onClick={() => handleNavLinkClick('certifications')}>Certifications</Nav.Link>
-              </Nav.Item>
+              </Nav.Item> */}
             </Nav>
             <Nav className="navbar-text">
               <Nav.Link href="https://www.linkedin.com/in/krashang-kumar/" target="_blank" rel="noopener noreferrer">
