@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,8 +12,15 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 function Header() {
   const [activeLink, setActiveLink] = useState(null);
 
+  const navbarCollapseRef = useRef(null);
   const handleNavLinkClick = (linkName) => {
     setActiveLink(linkName);
+    if (navbarCollapseRef.current) {
+      const navbarToggle = document.querySelector('.navbar-toggler');
+      if (navbarToggle && window.getComputedStyle(navbarToggle).display !== 'none') {
+        navbarToggle.click();
+      }
+    }
   };
 
 
@@ -26,7 +33,7 @@ function Header() {
             {/* <img src="/logo-black.png" alt="Logo" width="30" height="30" className="d-inline-block align-top" /> */}
             <span>K</span>rashang <span>K</span>umar
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarNav" />
+          <Navbar.Toggle aria-controls="navbarNav"  ref={navbarCollapseRef} />
           <Navbar.Collapse id="navbarNav">
             <Nav className="navbar-nav me-auto mb-2 mb-lg-0">
               <Nav.Item className={`navbar-item ${activeLink === 'about' ? 'navbar-item-active' : ''}`}>

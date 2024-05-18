@@ -13,8 +13,9 @@ const experiences = [
     img: "affixious.jpeg",
     date: "Dec 2023 - Present",
     endDate: "Present",
-    skills: ["Javascript", "TypeScript", "NodeJS", "ReactJS", "NextJS", "SailsJS", "GraphQL", "Restfull APIs", "Ghost JS", "Sails JS", "Team Management"],
+    skills: ["Javascript", "TypeScript", "NodeJS", "ReactJS", "NextJS", "SailsJS", "GraphQL", "Restfull APIs", "Ghost JS", "Sails JS", "Team Management", "Module Lead"],
     description: [
+      "Responsiblity to handle team of 5 developers",
       "Developed four user-friendly CMS Panel - Packages, Hotel , Flights and Newsletter using React to streamline content management for the web application accordingly across localized websites.",
       "Implement self node version changes as per project requirement using .sh file into projects",
       "Enhanced performance of MyHolidays.com web application by implementing service workers,caching, and optimizing Google Core Web Vitals. Resulted in 60% faster revisits and a 30% performance boost.",

@@ -21,6 +21,12 @@ margin-bottom: 30px;
       
 }
 
+#experience{
+    @media (max-width: 768px){
+        margin-top: 15px !important;
+    }
+}
+
 .Description {
 width: 100%;
 font-size: 15px;

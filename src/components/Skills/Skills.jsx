@@ -28,7 +28,7 @@ function Skills() {
     <Container>
       <div id="skills">
         <h1 id="subtitle">Skills</h1>
-        <Row xs={1} md={3} lg={4} className="g-4">
+        <Row xs={2} md={0} lg={4} className="g-4">
           {skillsData.map((skill, index) => (
             <Col key={index}>
               <Card className="skill-card">

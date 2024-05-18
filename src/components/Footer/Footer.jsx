@@ -29,7 +29,7 @@ function Footer() {
           </a>
         </div>
         <div id="Copyright">
-          &copy; 2024 Krashang Kumar. All rights reserved.
+          &copy; {new Date().getFullYear()} Krashang Kumar. All rights reserved.
         </div>
       </div>
     </div>
